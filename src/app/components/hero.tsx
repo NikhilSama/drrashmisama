@@ -15,8 +15,8 @@ export default function Hero() {
         <Image
           src="/images/drrashmisama.jpg"
           alt="Dr Rashmi Sama"
-          width={300}
-          height={300}
+          width={100}
+          height={100}
           layout="responsive"
         />
       </Box>
