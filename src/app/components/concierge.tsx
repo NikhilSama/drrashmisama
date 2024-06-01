@@ -15,8 +15,9 @@ export default function Hero() {
         <Image
           src="/images/drrashmisama.jpg"
           alt="Dr Rashmi Sama"
-          width={300}
-          height={300}
+          width={350}
+          height={350}
+          layout="responsive"
         />
       </Box>
       <Box sx={{ flex: 1, paddingLeft: 2, marginTop: "50px" }}>
