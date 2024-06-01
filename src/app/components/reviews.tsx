@@ -7,18 +7,20 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 const faq = [
   {
     q: "What is Medical Concierge?",
-    a: `Medical Concierge is an Exclusive form of Primary Health Care, that involves engaging a Doctor on a monthly retainer for oversight and co-ordination of treatment across multiple medical specialists to maximise patient health span.`,
+    a: `Medical Concierge is an exclusive form of Primary Health Care, that involves engaging a Doctor on a monthly retainer for oversight and co-ordination of treatment across multiple medical specialists to maximise patient health span.`,
   },
   {
     q: "What is included in the Medical Concierge service?",
     a: `The Medical Concierge service includes
-Unlimited teleconsultations
-Unlimited physician consultations at the physician's office 
-Recommendations for specialists and assistance in selecting the best one for you
-Expedient appointment procurement with the right specialists
-Accompaniment to specialist appointments to integrate advice from various specialists and patient feedback into a personalized treatment plan
-Review and explanation of scans and test reports in layman terms for patients and families
-Oversight and coordination of treatment across multiple medical specialists
+<ul>
+  <li>Unlimited teleconsultations</li>
+  <li>Unlimited physician consultations at the physician's office</li>
+  <li>Recommendations for specialists and assistance in selecting the best one for you</li>
+  <li>Expedient appointment procurement with the right specialists</li>
+  <li>Accompaniment to specialist appointments to integrate advice from various specialists and patient feedback into a personalized treatment plan</li>
+  <li>Review and explanation of scans and test reports in layman terms for patients and families</li>
+  <li>Oversight and coordination of treatment across multiple medical specialists</li>
+</ul>
 `,
   },
   {
@@ -62,7 +64,10 @@ export default function Reviews() {
             <Typography>{q.q}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{q.a}</Typography>
+            <Typography
+              component="div"
+              dangerouslySetInnerHTML={{ __html: q.a }}
+            />
           </AccordionDetails>
         </Accordion>
       ))}
