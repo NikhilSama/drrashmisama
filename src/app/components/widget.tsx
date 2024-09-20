@@ -7,7 +7,7 @@ const TurgonChatWidget = ({ id }: { id: string }) => {
         __html: `
     <!-- Embed this line anywhere in your website to add the chatbot -->
     <iframe
-      id="TurgonChatBot" src="http://turgon.ai/cschat?id=khaitanpublicschool&endpoint=api/widget&fixedBottomRight=true&leadCapture=true&storeMessageHistory=true" scrolling="yes"
+      id="TurgonChatBot" src="https://www.turgon.ai/cschat?id=khaitanpublicschool&endpoint=api/widget&fixedBottomRight=true&leadCapture=true&storeMessageHistory=true" scrolling="yes"
       style=" position: fixed; bottom: 0;right: 0;width: 120px;height: 80px;
         border: 0;background-color: transparent; overflow: scroll;
       "
