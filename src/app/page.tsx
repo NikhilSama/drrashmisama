@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import About from "./components/about";
 import Reviews from "./components/reviews";
 import Author from "./components/author";
+import TurgonChatWidget from "./components/widget";
 // import type { Metadata } from "next";
 
 // export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function Home() {
       <About />
       {/* <Reviews />
       <Author /> */}
+      <TurgonChatWidget id="123" />
     </Container>
   );
 }
